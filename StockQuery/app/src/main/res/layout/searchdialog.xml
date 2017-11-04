@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/stockSearchName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入要查询的股票编号"
+        />
+    <TextView
+        android:id="@+id/search_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注：沪市A股的代码是sh600xxx或sh601xxx\n        沪市B股的代码是sh900xxx  \n        深市A股的代码是sz000xxx \n        深圳B股的代码是sz200xxx"/>
+</LinearLayout>

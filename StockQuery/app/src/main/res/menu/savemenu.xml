@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:title="查询"
+    app:showAsAction="ifRoom|withText">
+    <menu>
+        <group android:checkableBehavior="none" >
+            <item android:id="@+id/savemenu"
+                  android:title="最近查询" />
+            <item android:id="@+id/search"
+                 android:title="搜索股票" />
+        </group>
+    </menu>
+</item>
+</menu>

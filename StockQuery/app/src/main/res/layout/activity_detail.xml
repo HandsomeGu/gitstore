@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sss.gqd.com.stockquery.DetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name"
+                android:text="股票名称"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="("/>
+            <TextView
+                android:id="@+id/stock_symbol"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="股票编号"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=")"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="当前价格："/>
+
+            <TextView
+                android:id="@+id/nowPri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="时间："/>
+            <TextView
+                android:id="@+id/data"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日开盘价：" />
+
+        <TextView
+            android:id="@+id/todayStartPri"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="昨日收盘价："
+            android:layout_marginLeft="30dp"/>
+        <TextView
+            android:id="@+id/yestodEndPri"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="涨跌百分比："/>
+            <TextView
+                android:id="@+id/increPer"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="涨跌额："/>
+            <TextView
+                android:id="@+id/increase"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="今日最高价："/>
+            <TextView
+                android:id="@+id/todayMax"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="今日最低价："/>
+            <TextView
+                android:id="@+id/todayMin"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="竞买价："/>
+            <TextView
+                android:id="@+id/competitivePri"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="竞卖价："/>
+            <TextView
+                android:id="@+id/reservePri"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="成交量："/>
+            <TextView
+                android:id="@+id/traNumber"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="成交金额："/>
+            <TextView
+                android:id="@+id/traAmount"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="买一："/>
+            <TextView
+                android:id="@+id/buyOne"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="买一报价："/>
+            <TextView
+                android:id="@+id/buyOnePri"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="卖一："/>
+            <TextView
+                android:id="@+id/sellOne"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="卖一报价："/>
+            <TextView
+                android:id="@+id/sellOnePri"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/piclist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ListView>
+    </LinearLayout>
+</FrameLayout>
